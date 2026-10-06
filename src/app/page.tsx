@@ -1,69 +1,85 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useRouter } from "next/navigation";
+
+export default function LandingPage() {
+  const router = useRouter();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-linear-to-b from-emerald-50 via-white to-emerald-50 flex flex-col">
+      {/* Navbar */}
+      
+
+      {/* Hero Section */}
+      <section className="flex-1 flex flex-col items-center justify-center px-6 text-center max-w-3xl mx-auto">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-sm font-medium mb-8">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Powered by local open-weight AI
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-emerald-950 mb-6 leading-tight">
+          Less scrolling.
+          <br />
+          <span className="text-emerald-600">More living.</span>
+        </h1>
+
+        <p className="text-lg sm:text-xl text-emerald-800/80 max-w-xl mb-10 leading-relaxed">
+          OutsideQuest uses a local open-weight model to create small,
+          personalized outdoor missions — then tells you to put your phone away.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <button
+            onClick={() => router.push("/start")}
+            className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-2xl shadow-lg transition-all active:scale-[0.98] text-lg"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Start Your First Quest
+          </button>
+
+          <button
+            onClick={() => router.push("/journal")}
+            className="px-8 py-4 bg-white border-2 border-emerald-200 hover:border-emerald-400 text-emerald-800 font-medium rounded-2xl transition-all active:scale-[0.98] text-lg"
           >
-            Documentation
-          </a>
+            View Journal
+          </button>
         </div>
-      </main>
-    </div>
+
+        {/* Tiny social proof / philosophy */}
+        <p className="mt-12 text-sm text-emerald-600/70 max-w-md">
+          The success metric isn’t screen time.
+          <br />
+          It’s time spent away from the screen.
+        </p>
+      </section>
+
+      {/* Bottom Feature Strip */}
+      <section className="w-full border-t border-emerald-100 bg-white/60 backdrop-blur-sm py-8">
+        <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+          <div>
+            <div className="text-2xl mb-2">🌿</div>
+            <h3 className="font-semibold text-emerald-900 mb-1">
+              Personalized
+            </h3>
+            <p className="text-sm text-emerald-700/80">
+              Missions shaped by your time, mood & environment
+            </p>
+          </div>
+          <div>
+            <div className="text-2xl mb-2">📵</div>
+            <h3 className="font-semibold text-emerald-900 mb-1">Phone Away</h3>
+            <p className="text-sm text-emerald-700/80">
+              Designed to make the screen the shortest part
+            </p>
+          </div>
+          <div>
+            <div className="text-2xl mb-2">🔒</div>
+            <h3 className="font-semibold text-emerald-900 mb-1">Fully Local</h3>
+            <p className="text-sm text-emerald-700/80">
+              Runs on open-weight AI. Your data never leaves the device.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
