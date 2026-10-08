@@ -1,0 +1,374 @@
+[
+  {
+    "timestamp": "2026-10-07T10:57:04.298Z",
+    "preferences": {
+      "availableTime": 15,
+      "mood": "relax",
+      "environment": "park",
+      "isSurprise": false,
+      "notes": "Keep it quiet, i have knee problem"
+    },
+    "quest": {
+      "title": "Stroll Through the Park's Hidden Corner",
+      "duration": 15,
+      "goal": "Find a serene spot to sit and observe the surroundings",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Walk slowly to a quiet area of the park, avoiding main paths"
+        },
+        {
+          "id": "task-2",
+          "description": "Find a bench or a tree with a flat surface to sit on, and sit down"
+        },
+        {
+          "id": "task-3",
+          "description": "Observe the types of leaves and flowers around you, noticing any changes in the season"
+        },
+        {
+          "id": "task-4",
+          "description": "Listen to the sounds of nature, focusing on the quietest sounds, such as the rustling of leaves or the chirping of birds"
+        }
+      ],
+      "tags": [
+        "relaxation",
+        "nature",
+        "observation"
+      ],
+      "id": "afeab23e-cf49-43df-bb06-a08536647f66",
+      "generatedAt": "2026-10-07T10:57:08.874Z",
+      "basedOn": {
+        "availableTime": 15,
+        "mood": "relax",
+        "environment": "park",
+        "isSurprise": false,
+        "notes": "Keep it quiet, i have knee problem"
+      },
+      "status": "completed",
+      "startedAt": "2026-10-07T10:57:35.714Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T10:03:51.092Z"
+    },
+    "progress": {
+      "status": "completed",
+      "startedAt": "2026-10-07T10:57:35.714Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T10:03:51.092Z",
+      "updatedAt": "2026-10-08T10:03:51.212Z"
+    }
+  },
+  {
+    "timestamp": "2026-10-07T11:56:06.110Z",
+    "preferences": {
+      "availableTime": 120,
+      "mood": "nature",
+      "environment": "park",
+      "isSurprise": true
+    },
+    "quest": {
+      "title": "Nature's Hidden Patterns Unfolded",
+      "duration": 120,
+      "goal": "Discover the subtle rhythms of the park's ecosystem",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Walk along a designated path, observing the types of trees that thrive in the shade."
+        },
+        {
+          "id": "task-2",
+          "description": "Find a spot with a clear view of the sky and sit down, observing the colors and shapes of the clouds."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the sounds of the park's water features, whether it's a stream, a pond, or a fountain, and sit nearby to listen."
+        }
+      ],
+      "tags": [
+        "nature",
+        "park",
+        "exploration"
+      ],
+      "id": "2485856e-61ce-4bce-a6b6-4405f640df87",
+      "generatedAt": "2026-10-07T11:56:11.570Z",
+      "basedOn": {
+        "availableTime": 120,
+        "mood": "nature",
+        "environment": "park",
+        "isSurprise": true
+      },
+      "status": "completed",
+      "startedAt": "2026-10-07T12:00:50.370Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T10:04:31.261Z"
+    },
+    "progress": {
+      "status": "completed",
+      "startedAt": "2026-10-07T12:00:50.370Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T10:04:31.261Z",
+      "updatedAt": "2026-10-08T10:04:31.372Z"
+    }
+  },
+  {
+    "timestamp": "2026-10-08T03:55:46.963Z",
+    "preferences": {
+      "availableTime": 15,
+      "mood": "relax",
+      "environment": "park",
+      "isSurprise": true
+    },
+    "quest": null,
+    "error": "Failed to perform inference: You have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+  },
+  {
+    "timestamp": "2026-10-08T04:05:36.122Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "explore",
+      "environment": "urban",
+      "isSurprise": false
+    },
+    "quest": null,
+    "error": "Failed to perform inference: You have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+  },
+  {
+    "timestamp": "2026-10-08T04:14:27.971Z",
+    "preferences": {
+      "availableTime": 60,
+      "mood": "nature",
+      "environment": "park",
+      "isSurprise": true
+    },
+    "quest": null,
+    "error": "Failed to perform inference: You have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+  },
+  {
+    "timestamp": "2026-10-08T04:26:52.413Z",
+    "preferences": {
+      "availableTime": 60,
+      "mood": "relax",
+      "environment": "urban",
+      "isSurprise": true
+    },
+    "quest": null,
+    "error": "Failed to perform inference: You have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+  },
+  {
+    "timestamp": "2026-10-08T08:44:42.328Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "nature",
+      "environment": "mixed",
+      "isSurprise": false
+    },
+    "quest": null,
+    "error": "Failed to perform inference: You have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+  },
+  {
+    "timestamp": "2026-10-08T09:05:26.178Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "nature",
+      "environment": "mixed",
+      "isSurprise": false
+    },
+    "quest": null,
+    "error": "500 unable to load runner: error waiting for runner to be ready: llama.cpp terminated unexpectedly: llama.cpp failed: 0.00.215.025 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\r\n0.00.243.321 I srv    load_model: loading model 'C:\\Users\\Sushant Singh Negi\\.docker\\models\\bundles\\sha256\\1eca257ec64d465cf38f766561e28eddb3b764adfba703288106a31cd2fe84a8\\model\\gemma-3-4b-it-Q4_K_M.gguf'\r\n0.02.227.880 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 999, abort\r\n0.02.701.882 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\r\nggml_vulkan: Device memory allocation of size 851226048 failed.\r\nggml_vulkan: vk::Device::allocateMemory: ErrorOutOfDeviceMemory\r\nD:/a/inference-engine-llama.cpp/inference-engine-llama.cpp/llamacpp/native/vendor/llama.cpp/ggml/src/ggml-backend.cpp:179: GGML_ASSERT(buffer) failed\r\n\n"
+  },
+  {
+    "timestamp": "2026-10-08T09:33:44.340Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "nature",
+      "environment": "mixed",
+      "isSurprise": false
+    },
+    "quest": null,
+    "error": "Model runner error (500): unable to load runner: error waiting for runner to be ready: llama.cpp terminated unexpectedly: llama.cpp failed: 0.00.589.387 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\r\n0.00.608.848 I srv    load_model: loading model 'C:\\Users\\Sushant Singh Negi\\.docker\\models\\bundles\\sha256\\1eca257ec64d465cf38f766561e28eddb3b764adfba703288106a31cd2fe84a8\\model\\gemma-3-4b-it-Q4_K_M.gguf'\r\n0.04.992.160 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 999, abort\r\n0.06.025.578 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\r\nggml_vulkan: Device memory allocation of size 851226048 failed.\r\nggml_vulkan: vk::Device::allocateMemory: ErrorOutOfDeviceMemory\r\nD:/a/inference-engine-llama.cpp/inference-engine-llama.cpp/llamacpp/native/vendor/llama.cpp/ggml/src/ggml-backend.cpp:179: GGML_ASSERT(buffer) failed\r\n\n"
+  },
+  {
+    "timestamp": "2026-10-08T09:35:30.184Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "nature",
+      "environment": "mixed",
+      "isSurprise": false
+    },
+    "quest": null,
+    "error": "Model runner error (500): unable to load runner: error waiting for runner to be ready: llama.cpp terminated unexpectedly: llama.cpp failed: 0.00.333.070 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\r\n0.00.404.229 I srv    load_model: loading model 'C:\\Users\\Sushant Singh Negi\\.docker\\models\\bundles\\sha256\\1eca257ec64d465cf38f766561e28eddb3b764adfba703288106a31cd2fe84a8\\model\\gemma-3-4b-it-Q4_K_M.gguf'\r\n0.02.427.339 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 999, abort\r\n0.02.878.711 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\r\nggml_vulkan: Device memory allocation of size 851226048 failed.\r\nggml_vulkan: vk::Device::allocateMemory: ErrorOutOfDeviceMemory\r\nD:/a/inference-engine-llama.cpp/inference-engine-llama.cpp/llamacpp/native/vendor/llama.cpp/ggml/src/ggml-backend.cpp:179: GGML_ASSERT(buffer) failed\r\n\n"
+  },
+  {
+    "timestamp": "2026-10-08T09:46:38.100Z",
+    "preferences": null,
+    "quest": null,
+    "error": "Bad escaped character in JSON at position 17 (line 1 column 18)"
+  },
+  {
+    "timestamp": "2026-10-08T09:46:52.841Z",
+    "preferences": {
+      "availableTime": 15,
+      "mood": "relax",
+      "environment": "park"
+    },
+    "quest": null,
+    "error": "Model runner error (500): unable to load runner: error waiting for runner to be ready: llama.cpp terminated unexpectedly: llama.cpp failed: 0.00.199.283 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)\r\n0.00.211.754 I srv    load_model: loading model 'C:\\Users\\Sushant Singh Negi\\.docker\\models\\bundles\\sha256\\1eca257ec64d465cf38f766561e28eddb3b764adfba703288106a31cd2fe84a8\\model\\gemma-3-4b-it-Q4_K_M.gguf'\r\n0.02.850.884 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 999, abort\r\n0.03.655.994 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden\r\nggml_vulkan: Device memory allocation of size 851226048 failed.\r\nggml_vulkan: vk::Device::allocateMemory: ErrorOutOfDeviceMemory\r\nD:/a/inference-engine-llama.cpp/inference-engine-llama.cpp/llamacpp/native/vendor/llama.cpp/ggml/src/ggml-backend.cpp:179: GGML_ASSERT(buffer) failed\r\n\n"
+  },
+  {
+    "timestamp": "2026-10-08T10:10:37.767Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "nature",
+      "environment": "mixed",
+      "isSurprise": false
+    },
+    "quest": {
+      "title": "Whispers of the Stone",
+      "duration": 30,
+      "goal": "To feel the stillness of the earth beneath your feet.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, grey stone and trace its contours with your finger."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit down on a mossy rock and simply observe the way it shifts slightly with the breeze."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the subtle scent of damp earth and decaying leaves surrounding the rock."
+        }
+      ],
+      "tags": [
+        "nature",
+        "stillness",
+        "earth",
+        "observation"
+      ],
+      "id": "e3631b37-f833-450b-b171-7744d12dcecf",
+      "generatedAt": "2026-10-08T10:11:04.215Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "nature",
+        "environment": "mixed",
+        "isSurprise": false
+      },
+      "status": "completed",
+      "startedAt": "2026-10-08T10:11:59.277Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T10:42:00.096Z",
+      "reflection": "test",
+      "moodBefore": "nature",
+      "moodAfter": "explore",
+      "minutesOutside": 76,
+      "completedAt": "2026-10-08T11:28:30.261Z"
+    },
+    "progress": {
+      "status": "completed",
+      "startedAt": "2026-10-08T10:11:59.277Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T11:28:30.261Z",
+      "updatedAt": "2026-10-08T11:28:30.261Z"
+    }
+  },
+  {
+    "timestamp": "2026-10-08T10:12:55.941Z",
+    "preferences": {
+      "availableTime": 30,
+      "mood": "relax",
+      "environment": "urban",
+      "isSurprise": true
+    },
+    "quest": {
+      "title": "Whispers of the City Stone",
+      "duration": 30,
+      "goal": "To feel the pulse of the city through the stones beneath your feet.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, gray stone in a small patch of grass near a sidewalk."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit for five minutes, close to the base of a lamppost, and simply observe the way the rain catches the metal."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the subtle shift in the air temperature as a breeze passes through the street."
+        }
+      ],
+      "tags": [
+        "urban",
+        "sensory",
+        "observation"
+      ],
+      "id": "01478720-fcbb-4f47-b5a8-be701ea3e10f",
+      "generatedAt": "2026-10-08T10:13:24.868Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "relax",
+        "environment": "urban",
+        "isSurprise": true
+      },
+      "status": "completed",
+      "startedAt": "2026-10-08T10:35:18.852Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T11:25:28.106Z",
+      "reflection": "test",
+      "moodBefore": "relax",
+      "moodAfter": "calm",
+      "minutesOutside": 51,
+      "completedAt": "2026-10-08T11:26:29.441Z"
+    },
+    "progress": {
+      "status": "completed",
+      "startedAt": "2026-10-08T10:35:18.852Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T11:26:29.441Z",
+      "updatedAt": "2026-10-08T11:26:29.441Z"
+    }
+  },
+  {
+    "timestamp": "2026-10-08T10:35:43.016Z",
+    "preferences": {
+      "availableTime": 15,
+      "mood": "relax",
+      "environment": "urban",
+      "isSurprise": false,
+      "notes": "i want to do chill"
+    },
+    "quest": {
+      "title": "Whispers of the City",
+      "duration": 15,
+      "goal": "To feel the pulse of the city and notice the subtle shifts in the air.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a bench in a busy square and sit for ten minutes, focusing on the textures of the pavement beneath you."
+        },
+        {
+          "id": "task-2",
+          "description": "Observe the way the sunlight dances on the buildings around you, noticing the different shades of grey and white."
+        },
+        {
+          "id": "task-3",
+          "description": "Close your eyes for a moment and simply listen to the city – the rumble of distant buses, the brief announcements, the hurried footsteps."
+        }
+      ],
+      "tags": [
+        "urban",
+        "quiet",
+        "observation"
+      ],
+      "id": "98e1d8a2-d0d0-48e8-ab4b-d0c57e1ba3e7",
+      "generatedAt": "2026-10-08T10:36:08.230Z",
+      "basedOn": {
+        "availableTime": 15,
+        "mood": "relax",
+        "environment": "urban",
+        "isSurprise": false,
+        "notes": "i want to do chill"
+      }
+    }
+  }
+]

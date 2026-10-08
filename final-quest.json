@@ -1,0 +1,325 @@
+[
+  {
+    "questId": "256017bc-c208-41d7-a5aa-53474c066e5f",
+    "quest": {
+      "title": "Wanderer's Discovery Walk",
+      "duration": 120,
+      "goal": "Uncover hidden wonders in your surroundings",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Walk to a nearby park or open space and find a spot with an interesting texture, such as a tree trunk, a rock, or a unique piece of bark."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit at this spot and observe the sounds around you. Try to identify at least three different types of noises, such as bird calls, wind rustling through leaves, or the distant hum of a city."
+        },
+        {
+          "id": "task-3",
+          "description": "Take a slow and deliberate walk around the area, paying attention to any changes in the environment. Look for patterns in nature, such as the way light filters through leaves or the way water flows down a slope."
+        },
+        {
+          "id": "task-4",
+          "description": "Find a unique or interesting object, such as a piece of driftwood, a smooth stone, or a peculiar leaf, and bring it back to the starting point."
+        }
+      ],
+      "tags": [
+        "explore",
+        "nature",
+        "sensory"
+      ],
+      "id": "88311694-fd3e-40d2-a6fe-f406f189d7f2",
+      "generatedAt": "2026-10-07T10:09:24.488Z",
+      "basedOn": {
+        "availableTime": 120,
+        "mood": "explore",
+        "environment": "mixed",
+        "isSurprise": false,
+        "notes": "test"
+      }
+    }
+  },
+  {
+    "questId": "7213c457-a9d5-47cb-9b39-f7c262b5544b",
+    "quest": {
+      "title": "Stroll Through the Park's Hidden Corner",
+      "duration": 15,
+      "goal": "Find a serene spot to sit and observe the surroundings",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Walk slowly to a quiet area of the park, avoiding main paths"
+        },
+        {
+          "id": "task-2",
+          "description": "Find a bench or a tree with a flat surface to sit on, and sit down"
+        },
+        {
+          "id": "task-3",
+          "description": "Observe the types of leaves and flowers around you, noticing any changes in the season"
+        },
+        {
+          "id": "task-4",
+          "description": "Listen to the sounds of nature, focusing on the quietest sounds, such as the rustling of leaves or the chirping of birds"
+        }
+      ],
+      "tags": [
+        "relaxation",
+        "nature",
+        "observation"
+      ],
+      "id": "afeab23e-cf49-43df-bb06-a08536647f66",
+      "generatedAt": "2026-10-07T10:57:08.874Z",
+      "basedOn": {
+        "availableTime": 15,
+        "mood": "relax",
+        "environment": "park",
+        "isSurprise": false,
+        "notes": "Keep it quiet, i have knee problem"
+      }
+    }
+  },
+  {
+    "questId": "9272600d-d0b3-478d-9d83-c50c942de59d",
+    "quest": {
+      "title": "Nature's Hidden Patterns Unfolded",
+      "duration": 120,
+      "goal": "Discover the subtle rhythms of the park's ecosystem",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Walk along a designated path, observing the types of trees that thrive in the shade."
+        },
+        {
+          "id": "task-2",
+          "description": "Find a spot with a clear view of the sky and sit down, observing the colors and shapes of the clouds."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the sounds of the park's water features, whether it's a stream, a pond, or a fountain, and sit nearby to listen."
+        }
+      ],
+      "tags": [
+        "nature",
+        "park",
+        "exploration"
+      ],
+      "id": "2485856e-61ce-4bce-a6b6-4405f640df87",
+      "generatedAt": "2026-10-07T11:56:11.570Z",
+      "basedOn": {
+        "availableTime": 120,
+        "mood": "nature",
+        "environment": "park",
+        "isSurprise": true
+      }
+    }
+  },
+  {
+    "questId": "7d3eefe0-020c-485f-b7be-e07b490b1af0",
+    "quest": {
+      "title": "Whispers of the Stone",
+      "duration": 30,
+      "goal": "To feel the stillness of the earth beneath your feet.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, grey stone and trace its contours with your finger."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit down on a mossy rock and simply observe the way it shifts slightly with the breeze."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the subtle scent of damp earth and decaying leaves surrounding the rock."
+        }
+      ],
+      "tags": [
+        "nature",
+        "stillness",
+        "earth",
+        "observation"
+      ],
+      "id": "e3631b37-f833-450b-b171-7744d12dcecf",
+      "generatedAt": "2026-10-08T10:11:04.215Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "nature",
+        "environment": "mixed",
+        "isSurprise": false
+      }
+    }
+  },
+  {
+    "questId": "c2dd5e3c-ddd4-4779-b34f-d20b587699bf",
+    "quest": {
+      "title": "Whispers of the City Stone",
+      "duration": 30,
+      "goal": "To feel the pulse of the city through the stones beneath your feet.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, gray stone in a small patch of grass near a sidewalk."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit for five minutes, close to the base of a lamppost, and simply observe the way the rain catches the metal."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the subtle shift in the air temperature as a breeze passes through the street."
+        }
+      ],
+      "tags": [
+        "urban",
+        "sensory",
+        "observation"
+      ],
+      "id": "01478720-fcbb-4f47-b5a8-be701ea3e10f",
+      "generatedAt": "2026-10-08T10:13:24.868Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "relax",
+        "environment": "urban",
+        "isSurprise": true
+      }
+    }
+  },
+  {
+    "questId": "5c51d36d-c57d-407b-84cd-44c64991d9e1",
+    "quest": {
+      "title": "Whispers of the City",
+      "duration": 15,
+      "goal": "To feel the pulse of the city and notice the subtle shifts in the air.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a bench in a busy square and sit for ten minutes, focusing on the textures of the pavement beneath you."
+        },
+        {
+          "id": "task-2",
+          "description": "Observe the way the sunlight dances on the buildings around you, noticing the different shades of grey and white."
+        },
+        {
+          "id": "task-3",
+          "description": "Close your eyes for a moment and simply listen to the city – the rumble of distant buses, the brief announcements, the hurried footsteps."
+        }
+      ],
+      "tags": [
+        "urban",
+        "quiet",
+        "observation"
+      ],
+      "id": "98e1d8a2-d0d0-48e8-ab4b-d0c57e1ba3e7",
+      "generatedAt": "2026-10-08T10:36:08.230Z",
+      "basedOn": {
+        "availableTime": 15,
+        "mood": "relax",
+        "environment": "urban",
+        "isSurprise": false,
+        "notes": "i want to do chill"
+      }
+    }
+  },
+  {
+    "questId": "01478720-fcbb-4f47-b5a8-be701ea3e10f",
+    "quest": {
+      "title": "Whispers of the City Stone",
+      "duration": 30,
+      "goal": "To feel the pulse of the city through the stones beneath your feet.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, gray stone in a small patch of grass near a sidewalk."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit for five minutes, close to the base of a lamppost, and simply observe the way the rain catches the metal."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the subtle shift in the air temperature as a breeze passes through the street."
+        }
+      ],
+      "tags": [
+        "urban",
+        "sensory",
+        "observation"
+      ],
+      "id": "01478720-fcbb-4f47-b5a8-be701ea3e10f",
+      "generatedAt": "2026-10-08T10:13:24.868Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "relax",
+        "environment": "urban",
+        "isSurprise": true
+      },
+      "status": "completed",
+      "startedAt": "2026-10-08T10:35:18.852Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T11:25:28.106Z",
+      "reflection": "test",
+      "moodBefore": "relax",
+      "moodAfter": "calm",
+      "minutesOutside": 51,
+      "completedAt": "2026-10-08T11:26:29.441Z"
+    },
+    "reflection": "test",
+    "moodBefore": "relax",
+    "moodAfter": "calm",
+    "minutesOutside": 51,
+    "completedAt": "2026-10-08T11:26:29.441Z",
+    "startedAt": "2026-10-08T10:35:18.852Z"
+  },
+  {
+    "questId": "e3631b37-f833-450b-b171-7744d12dcecf",
+    "quest": {
+      "title": "Whispers of the Stone",
+      "duration": 30,
+      "goal": "To feel the stillness of the earth beneath your feet.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, grey stone and trace its contours with your finger."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit down on a mossy rock and simply observe the way it shifts slightly with the breeze."
+        },
+        {
+          "id": "task-3",
+          "description": "Notice the subtle scent of damp earth and decaying leaves surrounding the rock."
+        }
+      ],
+      "tags": [
+        "nature",
+        "stillness",
+        "earth",
+        "observation"
+      ],
+      "id": "e3631b37-f833-450b-b171-7744d12dcecf",
+      "generatedAt": "2026-10-08T10:11:04.215Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "nature",
+        "environment": "mixed",
+        "isSurprise": false
+      },
+      "status": "completed",
+      "startedAt": "2026-10-08T10:11:59.277Z",
+      "remainingSeconds": 0,
+      "lastPausedAt": "2026-10-08T10:42:00.096Z",
+      "reflection": "test",
+      "moodBefore": "nature",
+      "moodAfter": "explore",
+      "minutesOutside": 76,
+      "completedAt": "2026-10-08T11:28:30.261Z"
+    },
+    "reflection": "test",
+    "moodBefore": "nature",
+    "moodAfter": "explore",
+    "minutesOutside": 76,
+    "completedAt": "2026-10-08T11:28:30.261Z",
+    "startedAt": "2026-10-08T10:11:59.277Z"
+  }
+]
