@@ -86,7 +86,7 @@ export default function StartQuestPage() {
       finalMood =
         MOOD_OPTIONS[Math.floor(Math.random() * MOOD_OPTIONS.length)].id;
     } else if (selectedMoodPreset === "custom") {
-      finalMood = "curious"; // Fallback enum type for schema compliance
+      finalMood = "curious";
       customMoodNote = customMood ? `Custom Mood/Vibe: ${customMood}.` : "";
     } else {
       finalMood = selectedMoodPreset;
@@ -100,7 +100,7 @@ export default function StartQuestPage() {
           Math.floor(Math.random() * ENVIRONMENT_OPTIONS.length)
         ].id;
     } else if (selectedEnvPreset === "custom") {
-      finalEnv = "mixed"; // Fallback enum type for schema compliance
+      finalEnv = "mixed";
       customEnvNote = customEnv ? `Custom Setting/Location: ${customEnv}.` : "";
     } else {
       finalEnv = selectedEnvPreset;
@@ -180,10 +180,11 @@ export default function StartQuestPage() {
                     key={opt.value}
                     type="button"
                     onClick={() => setSelectedTimePreset(opt.value)}
-                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all ${selectedTimePreset === opt.value
+                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all ${
+                      selectedTimePreset === opt.value
                         ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20"
                         : "bg-emerald-50/50 dark:bg-zinc-800/70 border-emerald-100 dark:border-zinc-700 text-emerald-900 dark:text-zinc-200 hover:border-emerald-300 dark:hover:border-zinc-600"
-                      }`}
+                    }`}
                   >
                     {opt.label}
                   </button>
@@ -191,10 +192,11 @@ export default function StartQuestPage() {
                 <button
                   type="button"
                   onClick={() => setSelectedTimePreset("custom")}
-                  className={`py-2.5 rounded-xl text-xs font-semibold border transition-all ${selectedTimePreset === "custom"
+                  className={`py-2.5 rounded-xl text-xs font-semibold border transition-all ${
+                    selectedTimePreset === "custom"
                       ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20"
                       : "bg-emerald-50/50 dark:bg-zinc-800/70 border-emerald-100 dark:border-zinc-700 text-emerald-900 dark:text-zinc-200 hover:border-emerald-300 dark:hover:border-zinc-600"
-                    }`}
+                  }`}
                 >
                   Custom
                 </button>
@@ -233,10 +235,11 @@ export default function StartQuestPage() {
                     key={opt.id}
                     type="button"
                     onClick={() => setSelectedMoodPreset(opt.id)}
-                    className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-xl border transition-all ${selectedMoodPreset === opt.id
+                    className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-xl border transition-all ${
+                      selectedMoodPreset === opt.id
                         ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20"
                         : "bg-emerald-50/50 dark:bg-zinc-800/70 border-emerald-100 dark:border-zinc-700 text-emerald-900 dark:text-zinc-200 hover:border-emerald-300 dark:hover:border-zinc-600"
-                      }`}
+                    }`}
                   >
                     <span className="text-lg leading-none mb-1">
                       {opt.emoji}
@@ -247,10 +250,11 @@ export default function StartQuestPage() {
                 <button
                   type="button"
                   onClick={() => setSelectedMoodPreset("custom")}
-                  className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-xl border transition-all ${selectedMoodPreset === "custom"
+                  className={`flex flex-col items-center justify-center py-2.5 px-1 rounded-xl border transition-all ${
+                    selectedMoodPreset === "custom"
                       ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20"
                       : "bg-emerald-50/50 dark:bg-zinc-800/70 border-emerald-100 dark:border-zinc-700 text-emerald-900 dark:text-zinc-200 hover:border-emerald-300 dark:hover:border-zinc-600"
-                    }`}
+                  }`}
                 >
                   <span className="text-lg leading-none mb-1">✨</span>
                   <span className="text-[11px] font-medium">Custom</span>
@@ -288,10 +292,11 @@ export default function StartQuestPage() {
                     key={opt.id}
                     type="button"
                     onClick={() => setSelectedEnvPreset(opt.id)}
-                    className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border text-xs font-semibold transition-all ${selectedEnvPreset === opt.id
+                    className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border text-xs font-semibold transition-all ${
+                      selectedEnvPreset === opt.id
                         ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20"
                         : "bg-emerald-50/50 dark:bg-zinc-800/70 border-emerald-100 dark:border-zinc-700 text-emerald-900 dark:text-zinc-200 hover:border-emerald-300 dark:hover:border-zinc-600"
-                      }`}
+                    }`}
                   >
                     <span>{opt.emoji}</span>
                     <span>{opt.label}</span>
@@ -300,10 +305,11 @@ export default function StartQuestPage() {
                 <button
                   type="button"
                   onClick={() => setSelectedEnvPreset("custom")}
-                  className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border text-xs font-semibold transition-all ${selectedEnvPreset === "custom"
+                  className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border text-xs font-semibold transition-all ${
+                    selectedEnvPreset === "custom"
                       ? "bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/20"
                       : "bg-emerald-50/50 dark:bg-zinc-800/70 border-emerald-100 dark:border-zinc-700 text-emerald-900 dark:text-zinc-200 hover:border-emerald-300 dark:hover:border-zinc-600"
-                    }`}
+                  }`}
                 >
                   <span>📍</span>
                   <span>Custom</span>

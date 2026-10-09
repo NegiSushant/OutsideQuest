@@ -12,7 +12,6 @@ export const dockerAI =
     apiKey: "not-needed",
   });
 
-// Cache the instance in development so hot-reloads don't create multiple connections
 if (process.env.NODE_ENV !== "production") {
   globalAI.dockerClient = dockerAI;
 }

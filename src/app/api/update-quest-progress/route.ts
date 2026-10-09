@@ -7,8 +7,6 @@ const LOG_FILE = path.join(process.cwd(), "quest-test-logs.json");
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    // expected body:
-    // { questId, status, startedAt?, remainingSeconds?, lastPausedAt? }
 
     const {
       questId,
@@ -65,7 +63,7 @@ export async function POST(request: NextRequest) {
       completedAt: completedAt ?? logs[index].quest.completedAt,
     };
 
-    // Also keep a top-level copy of the progress for easy reading (optional)
+    // keep a top-level copy of the progress for easy reading
     logs[index].progress = {
       status: logs[index].quest.status,
       startedAt: logs[index].quest.startedAt,

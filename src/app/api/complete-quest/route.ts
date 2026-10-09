@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
         updatedAt: completionTime,
       };
 
-      // Also persist to final-quest.json
+      // persist to final-quest.json
       const finalEntry: CompletedQuest = {
         questId: targetId,
         quest: logs[index].quest,

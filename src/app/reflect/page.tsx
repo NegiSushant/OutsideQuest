@@ -167,8 +167,9 @@ function ReflectContent() {
           Reflection Saved!
         </h1>
         <p className="text-emerald-700 dark:text-emerald-300 text-sm max-w-sm mb-6">
-          You recorded <span className="font-bold">{minutesOutside} minutes</span>{" "}
-          outside. Taking you to your history...
+          You recorded{" "}
+          <span className="font-bold">{minutesOutside} minutes</span> outside.
+          Taking you to your history...
         </p>
         <div className="w-8 h-8 rounded-full border-3 border-emerald-500 border-t-transparent animate-spin" />
       </main>
@@ -338,10 +339,11 @@ function ReflectContent() {
                     key={m.id}
                     type="button"
                     onClick={() => setMoodBefore(m.id)}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${moodBefore === m.id
-                      ? "bg-emerald-600 text-white shadow-md scale-105"
-                      : "bg-emerald-50/60 dark:bg-zinc-800 text-emerald-900 dark:text-zinc-300 border border-emerald-100 dark:border-zinc-700 hover:border-emerald-300"
-                      }`}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
+                      moodBefore === m.id
+                        ? "bg-emerald-600 text-white shadow-md scale-105"
+                        : "bg-emerald-50/60 dark:bg-zinc-800 text-emerald-900 dark:text-zinc-300 border border-emerald-100 dark:border-zinc-700 hover:border-emerald-300"
+                    }`}
                   >
                     <span>{m.emoji}</span>
                     <span>{m.label}</span>
@@ -367,10 +369,11 @@ function ReflectContent() {
                     key={m.id}
                     type="button"
                     onClick={() => setMoodAfter(m.id)}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${moodAfter === m.id
-                      ? "bg-emerald-600 text-white shadow-md scale-105"
-                      : "bg-emerald-50/60 dark:bg-zinc-800 text-emerald-900 dark:text-zinc-300 border border-emerald-100 dark:border-zinc-700 hover:border-emerald-300"
-                      }`}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
+                      moodAfter === m.id
+                        ? "bg-emerald-600 text-white shadow-md scale-105"
+                        : "bg-emerald-50/60 dark:bg-zinc-800 text-emerald-900 dark:text-zinc-300 border border-emerald-100 dark:border-zinc-700 hover:border-emerald-300"
+                    }`}
                   >
                     <span>{m.emoji}</span>
                     <span>{m.label}</span>

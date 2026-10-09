@@ -73,7 +73,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2 border-l border-emerald-100 dark:border-zinc-800 pl-4 sm:pl-6">
             {/* GitHub Repo Link */}
             <Link
-              href="https://github.com/your-username/outside-quest"
+              href="https://github.com/NegiSushant/OutsideQuest"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full text-emerald-700 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-zinc-800 transition"

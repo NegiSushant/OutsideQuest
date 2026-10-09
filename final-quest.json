@@ -321,5 +321,40 @@
     "minutesOutside": 76,
     "completedAt": "2026-10-08T11:28:30.261Z",
     "startedAt": "2026-10-08T10:11:59.277Z"
+  },
+  {
+    "questId": "3cc93d47-0acc-4ba2-9fba-f5b7b6492f29",
+    "quest": {
+      "title": "Whispers of the Stone",
+      "duration": 30,
+      "goal": "To feel connected to the earth through a slow, deliberate observation of its textures and sounds.",
+      "tasks": [
+        {
+          "id": "task-1",
+          "description": "Find a smooth, grey stone and examine its surface closely, paying attention to the patterns and variations in its texture."
+        },
+        {
+          "id": "task-2",
+          "description": "Sit down near a fallen tree, close your eyes, and listen intently to the sounds of the wind rustling through the leaves."
+        },
+        {
+          "id": "task-3",
+          "description": "Slowly trace the outline of a small wildflower with your finger, noticing the delicate veins and the way the light catches its petals."
+        }
+      ],
+      "tags": [
+        "nature",
+        "observation",
+        "listening"
+      ],
+      "id": "cca5732d-909f-463b-9f39-a7f0e1da70e0",
+      "generatedAt": "2026-10-09T03:52:27.560Z",
+      "basedOn": {
+        "availableTime": 30,
+        "mood": "nature",
+        "environment": "mixed",
+        "isSurprise": false
+      }
+    }
   }
 ]

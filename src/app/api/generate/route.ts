@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
   try {
     preferences = (await request.json()) as UserPreferences;
 
-    // Validate that we actually got preferences before building the prompt
+    // Validate that preferences before building the prompt
     if (!preferences || !preferences.availableTime) {
       throw new Error("Invalid or missing user preferences");
     }
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     ${preferences.isSurprise ? "- This is a surprise quest" : ""}
     ${preferences.notes ? `- Notes: ${preferences.notes}` : ""}`;
 
-    // ── Call Docker Model Runner (OpenAI-compatible) ──
+    // Call Docker Model Runner
     const response = await dockerAI.chat.completions.create({
       model: config.defaultModel,
       messages: [
@@ -142,13 +142,13 @@ export async function GET() {
       .filter((entry: any) => entry.quest !== null)
       .map((entry: any) => ({
         ...entry.quest,
-        loggedAt: entry.timestamp, // keep original log time
+        loggedAt: entry.timestamp,
       }))
-      .reverse(); // newest first
+      .reverse();
 
     return NextResponse.json(successful);
   } catch (err) {
     console.error("Failed to read quest history:", err);
-    return NextResponse.json([], { status: 200 }); // return empty list instead of error
+    return NextResponse.json([], { status: 200 });
   }
 }

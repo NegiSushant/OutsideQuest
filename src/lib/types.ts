@@ -27,18 +27,17 @@ export type Environment =
 
 /** User preferences used to generate a quest */
 export interface UserPreferences {
-  availableTime: number; /** Available time in minutes */
+  availableTime: number;
   mood: Mood;
   environment: Environment;
-  isSurprise?: boolean; /** Whether this was a “Surprise Me” generation */
-  notes?: string; /** Whether this was a “Surprise Me” generation */
+  isSurprise?: boolean;
+  notes?: string;
 }
 
 /** A single concrete task inside a quest */
 export interface QuestTask {
   id: string;
   description: string;
-  /** Optional estimated minutes for this task */
   estimatedMinutes?: number;
 }
 
@@ -46,18 +45,18 @@ export interface QuestTask {
 export interface GeneratedQuest {
   id: string;
   title: string;
-  duration: number; /**Total suggested duration in minutes*/
+  duration: number;
   description?: string;
   tasks: QuestTask[];
-  tags?: string[]; /** Tags for filtering / display */
-  generatedAt: string; /** When this quest was generated (ISO string) */
-  basedOn: UserPreferences; /** The preferences that produced this quest */
+  tags?: string[];
+  generatedAt: string;
+  basedOn: UserPreferences;
 
   // runtime / progress fields
   status?: QuestStatus;
   startedAt?: string; // ISO
-  remainingSeconds?: number; // for resume
-  lastPausedAt?: string; // ISO – when modal was closed
+  remainingSeconds?: number;
+  lastPausedAt?: string;
 
   // reflection fields
   reflection?: string;
@@ -71,21 +70,19 @@ export interface GeneratedQuest {
 export interface CompletedQuest {
   questId: string;
   quest: GeneratedQuest;
-  reflection?: string; /** User’s free-text reflection after finishing */
+  reflection?: string;
   moodBefore?: Mood;
   moodAfter?: Mood;
-  completedAt?: string; /** When the user marked it complete (ISO string) */
+  completedAt?: string;
   startedAt?: string;
-  minutesOutside?: number; /** Actual minutes spent outside / on the quest */
-  proofUrl?: string; /** Optional photo / proof URL (base64 or remote) */
+  minutesOutside?: number;
+  proofUrl?: string;
 }
 
 /** Shape of everything we persist */
 export interface AppData {
   preferences: UserPreferences | null;
-  /** Currently active (accepted but not completed) quest */
   activeQuest: GeneratedQuest | null;
   completedQuests: CompletedQuest[];
-  /** Lifetime total minutes spent outside */
   totalMinutesOutside: number;
 }

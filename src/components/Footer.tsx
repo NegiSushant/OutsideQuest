@@ -35,18 +35,6 @@ export default function Footer() {
           >
             Source Code (GitHub)
           </Link>
-          <Link
-            href="https://devfolio.co/"
-            className="text-sm text-emerald-600 dark:text-zinc-400 hover:text-emerald-900 dark:hover:text-emerald-300 transition w-fit"
-          >
-            Devfolio Submission
-          </Link>
-          <Link
-            href="#"
-            className="text-sm text-emerald-600 dark:text-zinc-400 hover:text-emerald-900 dark:hover:text-emerald-300 transition w-fit"
-          >
-            Demo Video
-          </Link>
         </div>
 
         {/* Tech Stack */}
