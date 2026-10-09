@@ -1,6 +1,6 @@
 # SideQuest — Outside Quest
 
-> **Less scrolling. More living.**  
+> **Less scrolling. More living.**
 > An AI that gives you a reason to put your phone down and go outside.
 
 [![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest_2026-Week_1_%E2%80%9CTouch_Grass%E2%80%9D-10b981?style=flat-square)](https://dev.to/challenges/hacktoberfest-week1-2026-10-05)
@@ -17,14 +17,17 @@
 Instead of keeping you engaged in prolonged conversational dialogue, SideQuest is designed to do the opposite: take under a minute of your time, generate a small physical mission in your immediate environment, and tell you to put your phone away.
 
 ### Who it is for
+
 * Anyone experiencing digital fatigue from extended screen sessions.
 * Remote workers and students needing a structured reason to take a short break outdoors.
 * Anyone who wants to step outside but gets stuck deciding where to go or what to do.
 
 ### The problem it addresses
+
 Most outdoor and fitness applications demand continuous screen engagement — watching live maps, managing GPS routes, logging stats mid-walk, or photographing scenery for feeds. SideQuest requires zero interaction while you are outside.
 
 ### How it differs from a conventional AI chatbot
+
 Traditional conversational models are measured by session length and message volume. SideQuest measures success by **how quickly you close the tab and step away from the device**.
 
 ---
@@ -106,17 +109,20 @@ sequenceDiagram
 ## 🤖 AI & Open-Weight AI
 
 ### Model Details
+
 * **Model Name:** `ai/gemma3:1b-q4_K_M`
 * **Architecture:** Google Gemma 3, 1-Billion parameter instruction-tuned variant, 4-bit Medium quantization (`Q4_K_M`).
 * **Inference Runtime:** Docker Desktop Model Runner serving an OpenAI-compatible REST engine at `http://localhost:12434/engines/v1`.
 * **Execution Location:** 100% on-device local execution.
 
 ### Why This Model?
+
 * **Low Hardware Overhead:** The 1B quantized build requires less than 1.5 GB of RAM/VRAM, allowing it to run smoothly on standard development laptops without high-end dedicated GPUs.
 * **Instruction Adherence:** Follows JSON formatting constraints reliably, returning clean parseable arrays of tasks without markdown wrappers or conversational filler.
 * **Zero Cost & Offline Availability:** Operates without remote API billing, credit card requirements, or internet connectivity once the model weights are loaded.
 
 ### Why Open-Weight Matters
+
 Using an open-weight model ensures that personal notes, emotional states before and after activities, and location preferences remain strictly on the user's local machine.
 
 ---
@@ -169,27 +175,29 @@ SideQuest uses a monolithic Next.js architecture with localized service boundari
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology | Purpose |
-|:---|:---|:---|
-| **Frontend Framework** | Next.js 16.3.8 (App Router) | Application routing, server rendering, and layout structure |
-| **UI Library** | React 19.2.8 | Interactive interface components and state handling |
-| **Styling** | Tailwind CSS v4 | Utility styling, responsive design, dark/light modes |
-| **Theming** | `next-themes` v0.4.6 | Theme persistence across page reloads |
-| **AI Model** | Google Gemma 3 1B (`ai/gemma3:1b-q4_K_M`) | Open-weight instruction-tuned language model |
-| **AI Serving Engine** | Docker Desktop Model Runner | Local engine serving OpenAI-compatible API at port 12434 |
-| **Backend API** | Next.js API Routes (`app/api/*`) | Prompt assembling, validation, and JSON data transformations |
-| **Storage** | Local JSON files (`quest-test-logs.json`, `final-quest.json`) | Lightweight local persistence for quests and reflections |
-| **Runtime & Package Manager** | Bun v1.2.8 / Node.js v20+ | Package management and local development runtime |
+| Layer                               | Technology                                                        | Purpose                                                      |
+| :---------------------------------- | :---------------------------------------------------------------- | :----------------------------------------------------------- |
+| **Frontend Framework**        | Next.js 16.3.8 (App Router)                                       | Application routing, server rendering, and layout structure  |
+| **UI Library**                | React 19.2.8                                                      | Interactive interface components and state handling          |
+| **Styling**                   | Tailwind CSS v4                                                   | Utility styling, responsive design, dark/light modes         |
+| **Theming**                   | `next-themes` v0.4.6                                            | Theme persistence across page reloads                        |
+| **AI Model**                  | Google Gemma 3 1B (`ai/gemma3:1b-q4_K_M`)                       | Open-weight instruction-tuned language model                 |
+| **AI Serving Engine**         | Docker Desktop Model Runner                                       | Local engine serving OpenAI-compatible API at port 12434     |
+| **Backend API**               | Next.js API Routes (`app/api/*`)                                | Prompt assembling, validation, and JSON data transformations |
+| **Storage**                   | Local JSON files (`quest-test-logs.json`, `final-quest.json`) | Lightweight local persistence for quests and reflections     |
+| **Runtime & Package Manager** | Bun v1.2.8 / Node.js v20+                                         | Package management and local development runtime             |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 * [Bun](https://bun.sh/) (v1.2+) or [Node.js](https://nodejs.org/) (v20+)
 * [Docker Desktop](https://www.docker.com/) with **Model Runner** enabled (or any local engine serving `ai/gemma3:1b-q4_K_M` over an OpenAI-compatible endpoint at port 12434)
 
 ### 1. Clone the Repository
+
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd outside-quest
@@ -198,6 +206,7 @@ cd outside-quest
 *(If working from the upstream fork: `https://github.com/NegiSushant/OutsideQuest.git`)*
 
 ### 2. Install Dependencies
+
 ```bash
 # Using Bun (recommended)
 bun install
@@ -207,25 +216,32 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
+
 Copy `.env.example` to `.env`:
+
 ```bash
 cp .env.example .env
 ```
 
 Verify that `.env` points to your local engine:
+
 ```env
 BASE_URL=http://localhost:12434/engines/v1
 MODEL=ai/gemma3:1b-q4_K_M
 ```
 
 ### 4. Pull and Start the AI Model
+
 Ensure Docker Desktop is running with Model Runner enabled, then pull the model:
+
 ```bash
 docker model pull ai/gemma3:1b-q4_K_M
 ```
+
 Confirm the local engine is listening on `http://localhost:12434/engines/v1`.
 
 ### 5. Run the Application
+
 ```bash
 # Using Bun
 bun run dev
@@ -240,10 +256,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## ⚙️ Configuration
 
-| Variable | Required | Default Value | Description |
-|:---|:---|:---|:---|
-| `BASE_URL` | No | `http://localhost:12434/engines/v1` | Base URL of the local OpenAI-compatible inference engine |
-| `MODEL` | No | `ai/gemma3:1b-q4_K_M` | Identifier of the model loaded in the local engine |
+| Variable     | Required | Default Value                         | Description                                              |
+| :----------- | :------- | :------------------------------------ | :------------------------------------------------------- |
+| `BASE_URL` | No       | `http://localhost:12434/engines/v1` | Base URL of the local OpenAI-compatible inference engine |
+| `MODEL`    | No       | `ai/gemma3:1b-q4_K_M`               | Identifier of the model loaded in the local engine       |
 
 *Note: No external API keys or secrets are required to run the application.*
 
@@ -252,6 +268,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 🧪 Example Usage
 
 ### Input (User Preferences)
+
 ```json
 {
   "availableTime": 15,
@@ -263,6 +280,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ```
 
 ### Output (Model-Generated Quest)
+
 ```json
 {
   "id": "afeab23e-cf49-43df-bb06-a08536647f66",
@@ -336,16 +354,14 @@ SideQuest has been tested with real outdoor micro-adventures during development:
 ## 🎥 Demo
 
 * **Demo Video:** `<DEMO_VIDEO_URL>`
-* **Devfolio Submission:** [https://devfolio.co/](https://devfolio.co/)
 
 ---
 
 ## 📸 Screenshots
 
 <!-- Add screenshots here when available -->
-* **Quest Generator:** `<SCREENSHOT_URL>`
-* **Active Quest Timer:** `<SCREENSHOT_URL>`
-* **Reflection Journal:** `<SCREENSHOT_URL>`
+
+![1791519698337](image/README/1791519698337.png)![1791519727639](image/README/1791519727639.png)![1791519781166](image/README/1791519781166.png)![1791519850014](image/README/1791519850014.png)![1791519870611](image/README/1791519870611.png)![1791519899828](image/README/1791519899828.png)![1791519911168](image/README/1791519911168.png)![1791519962140](image/README/1791519962140.png)
 
 ---
 
@@ -410,7 +426,7 @@ License has not yet been specified.
 
 ## 🏆 Hacktoberfest 2026
 
-Built for **Hacktoberfest 2026 — DEV Community Week 1 Challenge (“Touch Grass”)**.  
+Built for **Hacktoberfest 2026 — DEV Community Week 1 Challenge (“Touch Grass”)**.
 Challenge details: [https://dev.to/challenges/hacktoberfest-week1-2026-10-05](https://dev.to/challenges/hacktoberfest-week1-2026-10-05)
 
 ---

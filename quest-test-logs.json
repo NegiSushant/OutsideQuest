@@ -409,7 +409,16 @@
         "mood": "nature",
         "environment": "mixed",
         "isSurprise": false
-      }
+      },
+      "status": "ongoing",
+      "startedAt": "2026-10-09T04:12:39.957Z",
+      "remainingSeconds": 1800
+    },
+    "progress": {
+      "status": "ongoing",
+      "startedAt": "2026-10-09T04:12:39.957Z",
+      "remainingSeconds": 1800,
+      "updatedAt": "2026-10-09T04:12:40.163Z"
     }
   }
 ]
