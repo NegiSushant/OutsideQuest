@@ -349,11 +349,6 @@ SideQuest has been tested with real outdoor micro-adventures during development:
 * [ ] **Hand-Drawn Journal Notes:** Local canvas scratchpad for quick sketches of plants or landmarks noticed during a quest.
 * [ ] **Weekly Quest Streaks:** Lightweight offline counter celebrating days with at least one completed outdoor quest.
 
----
-
-## 🎥 Demo
-
-* **Demo Video:** `<DEMO_VIDEO_URL>`
 
 ---
 
@@ -415,12 +410,6 @@ Contributions are welcome! To contribute:
 3. Commit your changes (`git commit -m 'Add improvement'`)
 4. Push to your branch (`git push origin feature/improvement`)
 5. Open a Pull Request
-
----
-
-## 📄 License
-
-License has not yet been specified.
 
 ---
 
